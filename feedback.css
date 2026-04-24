@@ -1,0 +1,132 @@
+
+body {
+    font-family: courier;
+    margin: 0;
+    padding: 0;
+    background-color: #304a27;
+}
+header {
+    background-color: #735c43;
+    color: #bef59d;
+    padding: 20px;
+    text-align: center;
+    font-family: Gill Sans;
+}
+
+#article1 {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+#fade {
+    text-align: left;
+    opacity: 0;
+    animation: fade-in 3s forwards;
+}
+
+svg {
+  position: relative;
+  overflow: visible;
+}
+
+
+
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 3;
+    }
+}
+.dropdown {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #036618;
+  border-radius: 10px;
+}
+
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+a:hover, .dropdown:hover .dropbtn {
+  background-color: #025213;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #036618;
+  min-width: 160px;
+  border-radius: 10px;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #025213;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.big-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #558745;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+.big-box div{
+  align-self:flex-start;
+}
+.big-box a{
+  color:#558745
+}
+
+
+@media screen and (max-width:780px){
+  .dropdown-content{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:50em) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em;
+    }
+    
+}
+
+

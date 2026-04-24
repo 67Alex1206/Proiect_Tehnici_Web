@@ -1,0 +1,215 @@
+
+body {
+    font-family: courier;
+    margin: 0;
+    padding: 0;
+    background-color: #304a27;
+    position:relative;
+}
+header {
+    background-color: #735c43;
+    color: #bef59d;
+    padding: 20px;
+    text-align: center;
+    font-family: Gill Sans;
+}
+
+#article1 {
+        
+        max-width: 75%;
+        margin: 0 auto;
+        
+    }
+
+#fade {
+    text-align: left;
+    opacity: 0;
+    animation: fade-in 3s forwards;
+}
+
+
+
+
+svg {
+  position: relative;
+  overflow: visible;
+}
+
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 3;
+    }
+}
+.dropdown {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #036618;
+  border-radius: 10px;
+}
+
+
+
+.dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: #025213;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #036618;
+  color: white;
+  min-width: 160px;
+  border-radius: 10px;
+  
+
+  
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.dropdown-content a:hover {background-color: #025213;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.big-box {
+  display: flex;
+  flex-direction: column;
+  background-color: #558745;
+  padding: 20px;
+  margin-top: 20px;
+  color: white;
+}
+
+button{
+  max-width: 60px;
+}
+
+.pretty-box {
+  color: #333;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  max-width: 150px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.pretty-box h2 {
+  margin: 0;
+  font-size: 18px;
+
+}
+
+
+.pretty-box:hover {
+  transform: scale(1.5);
+  background-color: aliceblue;
+}
+
+.container .pretty-box:nth-of-type(2n+1) h2{
+  color:#036618;
+}
+
+.little-box {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 10px;
+  width: 45%;
+  height: 400px;
+  background-color: #273822;
+  border-radius: 10px;
+  overflow: auto;
+  position: relative;
+  
+}
+.little-box3 {
+  padding-top: 15px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  background-color: #273822;
+  border-radius: 60px;
+}
+.little-box p {
+  margin-bottom: 15px;
+}
+
+.left-box {
+  text-align: left;
+  letter-spacing: 1.5px;
+  font-family: Gill Sans;
+  font-size: 22px;
+  color: white;
+  animation: slideFromLeft 1.5s ease forwards;
+}
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-50%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(3%);
+      opacity: 1;
+    }
+  }
+  .container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+
+@media screen and (max-width:780px){
+  
+    .dropdown-content{
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  .dropdown:hover .dropdown-content {
+        display: flex;
+        flex-direction: row;
+
+    }
+}
+
+@media screen and (min-width:50em) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1em;
+    } 
+}
+
+
+
